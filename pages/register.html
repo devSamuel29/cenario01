@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <form class="form-container">
+        <img src="../svg/spotify.svg" alt="spotify-logo" id="logo" />
+        <h1>Inscreva-se grátis e comece a curtir.</h1>
+
+        <div class="login-buttons">
+          <button type="button" id="facebook-login-btn">
+            <img src="../svg/facebook-logo.svg" alt="facebook-logo" />
+            <span>Inscrever-se com o Facebook</span>
+          </button>
+
+          <button type="button" id="google-login-btn">
+            <img src="../svg/google-logo.svg" alt="google-logo" />
+            <span>Inscrever-se com o Google</span>
+          </button>
+        </div>
+
+        <hr class="hr-text" data-content="OR" />
+
+        <div class="form-group">
+          <label for="email-input">Qual é o seu email?</label>
+          <input type="text" class="form-input" id="email-input" />
+          <a href="">Usar número de telefone.</a>
+        </div>
+
+        <div class="form-group">
+          <label for="password-input">Crie uma senha</label>
+          <input type="password" id="email-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="email-input">Como devemos chamar você?</label>
+          <input type="text" class="form-input" id="email-input" />
+          <p>Isso aparece no seu perfil.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="date-container">Qual sua data de nascimento?</label>
+
+          <div id="date-container">
+            <div id="day-container">
+              <label for="day-input">Dia</label>
+              <input
+                type="text"
+                id="day-input"
+                placeholder="DD"
+                maxlength="2"
+              />
+            </div>
+
+            <div id="month-container">
+              <label for="month-input">Mês</label>
+              <select id="month-input" name="cars">
+                <option value="janeiro">janeiro</option>
+                <option value="fevereiro">fevereiro</option>
+                <option value="março">março</option>
+                <option value="abril">abril</option>
+                <option value="maio">maio</option>
+                <option value="junho">junho</option>
+                <option value="julho">julho</option>
+                <option value="agosto">agosto</option>
+                <option value="setembro">setembro</option>
+                <option value="outubro">outubro</option>
+                <option value="novembro">novembro</option>
+                <option value="dezembro">dezembro</option>
+              </select>
+            </div>
+
+            <div id="year-container">
+              <label for="year-input">Ano</label>
+              <input type="text" placeholder="AAAA" />
+            </div>
+          </div>
+        </div>
+
+        <label id="gender-label" for="gender-container"
+          >Qual é o seu gênero?</label
+        >
+        <div id="gender-container">
+          <div class="options">
+            <input
+              type="radio"
+              id="male-option"
+              name="gender"
+              value="Masculino"
+            />
+            <label for="male-option">Masculino</label>
+          </div>
+
+          <div class="options">
+            <input
+              type="radio"
+              id="female-option"
+              name="gender"
+              value="Feminino"
+            />
+            <label for="female-option">Feminino</label>
+          </div>
+
+          <div class="options">
+            <input
+              type="radio"
+              id="none-option"
+              name="gender"
+              value="Prefiro não informar"
+            />
+            <label for="none-option">Prefiro não informar</label>
+          </div>
+        </div>
+
+        <div id="terms-options">
+          <div>
+            <input type="checkbox" id="option-1" value="Masculino" />
+            <label for="option-1"
+              >Não quero receber mensagens de marketing do Spotify
+            </label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="option-2" />
+            <label for="option-2"
+              >Compartilhar meus dados cadastrais com os provedores de conteúdo
+              do Spotify para fins de marketing.</label
+            >
+          </div>
+
+          <div>
+            <input type="checkbox" id="option-3" />
+            <label for="option-3"
+              >Eu concordo com os
+              <span>Termos e Condições de Uso do Spotify</span>.</label
+            >
+          </div>
+        </div>
+
+        <p id="disclaimer">
+          Para saber mais sobre como o Spotify coleta, utiliza, compartilha e
+          protege seus dados pessoais, leia a
+          <span>Política de Privacidade do Spotify</span>.
+        </p>
+
+        <button type="button" id="submit-button">Inscrever-se</button>
+
+        <h6 id="login-redirect">
+          Já tem uma conta?
+          <a href="#!">Faça login</a>.
+        </h6>
+      </form>
+    </main>
+  </body>
+</html>
